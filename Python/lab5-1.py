@@ -58,7 +58,7 @@ input_sizes = [ i for i in data.keys()][:20]
 print("Started:")
 
 # Measure time for each input size
-execution_times = [measure_time(size) for size in input_sizes][:20]
+execution_times = [measure_time(size) for size in input_sizes]
 
 
 
