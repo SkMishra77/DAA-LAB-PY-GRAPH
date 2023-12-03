@@ -54,23 +54,19 @@ void mergeSort(int arr[], int left, int right) {
 int main() {
     int arraySize;
 
-    // Input array size from the user
     printf("Enter the size of the array: ");
     scanf("%d", &arraySize);
 
     int myArray[arraySize];
 
-    // Input array elements from the user
     printf("Enter %d elements for the array:\n", arraySize);
     for (int i = 0; i < arraySize; i++) {
         printf("Element %d: ", i + 1);
         scanf("%d", &myArray[i]);
     }
 
-    // Perform merge sort
     mergeSort(myArray, 0, arraySize - 1);
 
-    // Display the sorted array
     printf("Sorted array: ");
     for (int i = 0; i < arraySize; i++) {
         printf("%d ", myArray[i]);
