@@ -30,8 +30,8 @@ def measure_time(input_size):
 
 
 # Generate input sizes (e.g., 1 to 100 with a step of 5)
-input_sizes = [ i for i in data.keys()][:20]
-# 
+input_sizes = [ i for i in data.keys()][0:20]
+
 
 # Measure time for each input size
 execution_times = [measure_time(size) for size in input_sizes]
