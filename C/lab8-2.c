@@ -24,10 +24,10 @@ void printMST(int parent[], int graph[V][V], int n) {
 }
 
 void primMST(int graph[V][V], int n) {
-    int parent[V]; // Array to store the constructed MST
-    int key[V];    // Key values used to pick the minimum weight edge
+    int parent[V]; 
+    int key[V];    
 
-    bool mstSet[V]; // To represent set of vertices included in MST
+    bool mstSet[V]; 
 
     
     for (int i = 0; i < n; i++) {
